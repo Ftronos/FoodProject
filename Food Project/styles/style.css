@@ -1,0 +1,429 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+
+/*Стиль главной страницы*/
+.brandRow {
+  width: 200px;
+  margin: 40px auto 0;
+}
+
+.brandLogo {
+  background-image: url(../images/icons/cooker.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+.brandName {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #999;
+}
+
+.navigation {
+}
+
+.navBlock {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navTitle {
+  text-align: center;
+  font-size: 64px;
+  padding: 40px 0;
+  color: rgb(200,10,10);
+}
+
+.navRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navItem {
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+}
+
+.navItem:hover .navItem-image{
+  color: green;
+  border-radius: 0px;
+}
+
+.navItem-image {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background: #eee;
+  border-radius: 100px;
+  transition: all .25s ease;
+}
+
+.navExplain {
+  opacity: 0;
+}
+
+.navItem-title {
+  font-size: 28px;
+}
+
+.navItem-image_recepies {
+  background-image: url(../images/icons/groceries.svg);
+}
+
+.navItem-image_tools {
+  background-image: url(../images/icons/scale.svg);
+}
+
+.navItem-image_restaurants {
+  background-image: url(../images/icons/dinner.svg);
+}
+
+
+/*Внутренняя страница*/
+/*Верхнее меню*/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.navTop {
+  height: 100px;
+  align-items: center;
+  display: flex;
+  background-color: blue;
+  color: white;
+  justify-content: space-around;
+}
+.navTopItem {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 1s;
+}
+/*Конец верхнего меню*/
+/*Левое меню*/
+.leftNav {
+  position: fixed;
+  top: 100px;
+  width: 10%;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.leftNavItem {
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+}
+
+.menu__list {
+}
+
+.menu__drop {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: -999em;
+  background-color: lightblue;
+  color: white;
+  opacity: 0;
+  transition: 0.5s opacity;
+  border-left: 10px solid transparent;
+}
+
+.menu__list:hover .menu__drop {
+  opacity: 1;
+  top: 0;
+  z-index: 1000;
+}
+/*Конец нижнего меню*/
+/*Фото рецепт*/
+.reciepeStepByStep {
+  margin-top: 40px;
+}
+.reciepeStepByStep_Step {
+  margin-top: 10px;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+.reciepeStepByStep_StepImage1 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/1.jpg);
+}
+.reciepeStepByStep_StepImage2 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/2.jpg);
+}
+.reciepeStepByStep_StepImage3 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/3.jpg);
+}
+.reciepeStepByStep_StepImage4 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/4.jpg);
+}
+.reciepeStepByStep_StepImage5 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/5.jpg);
+}
+.reciepeStepByStep_StepImage6 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/6.jpg);
+}
+.reciepeStepByStep_StepImage7 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/7.jpg);
+}
+.reciepeStepByStep_StepImage8 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/8.jpg);
+}
+.reciepeStepByStep_StepImage9 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/9.jpg);
+}
+.reciepeStepByStep_StepImage10 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/10.jpg);
+}
+.reciepeStepByStep_StepImage11 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/11.jpg);
+}
+.reciepeStepByStep_StepImage12 {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/mint_gazpacho/12.jpg);
+}
+.reciepeStepByStep_StepDescription {
+  width: 70%;
+  margin: auto;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+/*Конец фото меню*/
+/*Контент*/
+.content {
+  left: 10%;
+  top: 100px;
+  position: absolute;
+  width: 90%;
+  display: flex;
+  z-index: -1000;
+}
+/*Конец контента*/
+/*Рецепт*/
+.recepie {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+.recipeMainIntro {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    /*border: 1px solid black;*/
+
+}
+.recipe-image {
+    background-image: url(../images/mint_gazpacho/mainImage.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 100%;
+}
+
+.recipe-intro {
+    width: 40%;
+    margin-top: 3%;
+    padding-left: 10px;
+}
+.dishName {
+    font-size: 50px;
+    display: block;
+    line-height: 60px;
+    padding-right: 2%;
+
+}
+.dishDescription {
+    font-size: 20px;
+    display: block;
+    margin-top: 5%;
+    padding-right: 2%;
+    line-height: 30px;
+}
+
+.recipeIngridients {
+    /*display: flex;*/
+    /*height: 100vh;
+    height: 500px;*/
+    /*border: 1px solid red;*/
+    margin-top: 40px;
+}
+
+.ingredients {
+    font-size: 24px;
+    margin-top: 1%;
+    margin-left: 5%;
+    line-height: 40px;
+}
+.ingredientsList {
+    font-size: 16px;
+    margin-top: 1%;
+    margin-left: 5%;
+    line-height: 30px;
+}
+
+/*Конец рецепта*/
+/*Похожие рецепты*/
+.hotlink {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  margin: 15px 20px;
+}
+.hotlinkItem {
+  display: block;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hotlinkItem-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.image1 {
+  background-image: url(../images/Grushi_V_Sirope/mainImage.jpg);
+}
+
+.image2 {
+  background-image: url(../images/mint_gazpacho/mainImage.jpg);
+}
+
+.image3 {
+  background-image: url(../images/Sirniy_Sup/mainImage.jpg);
+}
+
+.image4 {
+  background-image: url(../images/Utka_Po_Pekinski/mainImage.jpg);
+}
+.hotlinkItem-category {
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.hotlinkItem-title {
+  font-size: 18px;
+}
+/*Конец похожих рецептов*/
+
+
+
+.navRowItem:hover {
+  text-decoration: underline;
+  transform: scale(1.5);
+}
+
+/*Начало блока с рецептами*/
+.Cuisine {
+  position: absolute;
+  left: 10%;
+  top: 100px;
+  width: 90%;
+}
+.TypeOfCuisine {
+  /*width: 100%;
+  display: flex;
+  flex-direction: column;*/
+  width: 100%;
+}
+.TypeOfCuisine_Name {
+  font-size: 24px;
+  line-height: 40px;
+}
+.TypeOfCuisine_Menu {
+  display: flex;
+  justify-content: space-around;
+}
+.TypeOfCuisine_MenuItem {
+border: 1px solid black;
+width: 30%;
+}
+.TypeOfCuisine_MenuItem_Image {
+height: 150px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+/*Конец блока с популярными рецептами*/
